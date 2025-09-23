@@ -9,6 +9,7 @@ var horas = str(dateTimeStamp_actual.hour)
 var minutos = str(dateTimeStamp_actual.minute)
 var segundos = str(dateTimeStamp_actual.second)
 var hora_actual = horas + ":" + minutos + ":" + segundos
+#Aqui no es un int el que se retorna, es un String.
 func hora() -> int:
 	return hora_actual
 

@@ -6,6 +6,7 @@ var minutos = str(dateTimeStamp_actual.minute)
 var segundos = str(dateTimeStamp_actual.second)
 var hora_actual = horas + ":" + minutos + ":" + segundos
 
+#func Hora_actual()->String:
 func Hora_actual():
 	return (hora_actual)
 	

@@ -1,9 +1,11 @@
 extends Node2D
 
+#Buen uso de las variables globales!
 var hora
 var claseJugador
 var objetos = ["llaves", "manta", "pocion de vida", "hierva", "cuerda"]
 
+# Idealmente que la función _ready se encuentre debajo del todo
 func _ready():
 	hora = horaActual()
 	mensaje()
@@ -16,11 +18,15 @@ func horaActual():
 	var segundos = str(datetime.second)
 	return horas + ":" + minutos + ":" + segundos
 
+
+# Aqui mezclaste la actividad 1 con la actividad 3. 
+# Lo cual es incorrecto ya que se pide una función parametrizada para la actividad 3
 func mensaje():
 	print("Ghost el troll del puente: bienvenido a mi puente grotesca criatura de apecto peculiar.")
 	print("Hora actual: " + hora)
 	print("Ghost: y dime ¿cuál es tu clase?.")
 
+	# Este arreglo es innecesario
 	var clases = ["paladin", "berserk", "mago", "druida"]
 	if claseJugador == "paladin":
 		print("Oh... ya veo, dime ¿qué te motivó a ser un paladin?.")

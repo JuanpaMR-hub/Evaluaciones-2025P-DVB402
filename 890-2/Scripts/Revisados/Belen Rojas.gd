@@ -8,6 +8,8 @@ var hora_actual = horas + ":"+ minutos + ":"+ segundos
 var inventario=["hacha","comida","pocion de vida","grimorio","llaves"]
 
 
+# Buen trabajo! Pero debe de indicar que tipo de dato retorna la función
+# func clasejugador(clase_jugador) -> void:
 func clasejugador(clase_jugador):
 	if clase_jugador.to_lower()=="paladin":
 		print("Oh ya veo, con que Paladin eh? dime, que gte motivo a escoger un camino tan... aburrido")
@@ -20,8 +22,11 @@ func clasejugador(clase_jugador):
 	else:
 		print("con que aun no te has decidido que ser aun, eh? no te preocupes, aqui no hay ninguna cara malevola que te apurara")
 
+#func hora()-> String:
 func hora():
 	return hora_actual 
+	
+#func mensaje()->void:
 func mensaje():
 	print("Bienvenido al puente ")
 	

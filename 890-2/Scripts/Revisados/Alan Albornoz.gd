@@ -1,10 +1,17 @@
 extends Node2D
 
+# Como pequeño tip -> No uses palabras capitalizadas en funciones
+
 #Actividad 1
+# Bien hecho! Aunque faltó identificar el retorno
+# Deberia de ser func trollSaludo() -> void:
+# Si bien funciona correctamente como lo has escrito, para esta prueba se le pedia eso
 func TrollSaludo():
 	print("Te he estado esperando, viajero.")
 
 #Actividad 2
+# Mismo detalle que en la actividad anterior
+# func horaActual() -> String:
 func HoraActual():
 	var dateTimeStamp_actual = Time.get_datetime_dict_from_system()
 	var horas = str(dateTimeStamp_actual.hour)
@@ -14,6 +21,7 @@ func HoraActual():
 	return hora_actual
 
 #Actividad 3
+# func claseElegida(clase_jugador) -> void:
 func ClaseElegida(clase_jugador):
 	if clase_jugador.to_lower() == "paladin":
 		print("Oh ya veo, con que un Paladin, ¿Eh? Dime, ¿Que te motivo a escoger un camino tan... aburrido?")
@@ -42,3 +50,5 @@ func _ready():
 	print("Se ha usado la pocion de vida.")
 	inventario.remove_at(2)
 	print(inventario)
+	
+# BUEN TRABAJO!
