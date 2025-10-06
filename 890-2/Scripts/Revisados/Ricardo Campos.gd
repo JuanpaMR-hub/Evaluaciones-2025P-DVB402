@@ -1,15 +1,23 @@
 extends Node2D
+
+# Super bien con la definición aqui!
 func saludar() ->void:
 	print("hola  jugador")
+	
+# Faltó definir el tipo de dato que retorna
 func reloj():
 	var dateTimeStamp_actual = Time.get_datetime_dict_from_system()
 	var horas = str(dateTimeStamp_actual.hour)
 	var minutos = str(dateTimeStamp_actual.minute)
 	var segundos = str(dateTimeStamp_actual.second)
 	var hora_actual = horas + ":" + minutos + ":" + segundos
+	# No debe devolver la función, debe devolver hora_actual
 	return reloj()
 
+#Faltó utilizar el parametro clase_jugador
+#func jugador(clase_jugador)->void:
 func jugador()-> void:
+	#Aqui hay problemas de indentación
 		if clase_jugador.to_lower() == "paladin":
 	print("oh ya veo, con que un paladin eh? dime, que te motivó a escoger un camino tan... aburrido?")
 elif clase_jugador.to_lower() == "berserk":
@@ -21,6 +29,9 @@ elif clase_jugador.to_lower() == "druida":
 else:
 	print("con que no te has decidido que ser aun, eh? no te preocupes, aqui no hay ninguna luna con cara 
 	malevola que te apurará")
+	
+	
+# Esto era innecesario ya que para eso escribimos la función
 #elige tu nivel
 var Paladin = ["Hola simple jugador"]
 var Berserk = ["hola jugador promedio"]
@@ -29,6 +40,9 @@ var druida = ["Con ese olor no pienso acercarme a ti"]
 #dependiendo de tu nivel es el print
 #YO ELIJO EL MAGO
 print(mago[0])
+
+# Le faltó la actividad 4
+
 
 var almacen = ["transforma gatos","Transformador sapo","Embellecedor","Hechizo de curacion","Veneno","Cancer"]
 print(almacen)

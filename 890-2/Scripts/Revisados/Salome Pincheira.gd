@@ -1,15 +1,21 @@
 extends Node2D
 
+#Aqui faltó identificar que tipo de dato retorna, como no retorna nada este es de un void
+#func NPC()->void:
 func NPC():
 	print("Soy Gohl, el Troll del Puente. Bienvenido al Pueblo.")
 
+#func Hora()->String:
 func Hora():
 	var dateTimeStamp_actual = Time.get_datetime_dict_from_system()
 	var horas = str(dateTimeStamp_actual.hour)
 	var minutos = str(dateTimeStamp_actual.minute)
 	var segundos = str(dateTimeStamp_actual.second)
 	var hora_actual = horas + ":" + minutos + ":" + segundos
+	#Aqui faltó usar el return, como queremos devolver la hora actual debe de ser:
+	#return hora_actual
 	
+#func clase(clase_jugador)->void:
 func clase(clase_jugador):
 	print("Bienvenido a la Tienda!, dime, que clase de jugador eres?.")
 	
@@ -27,5 +33,9 @@ func clase(clase_jugador):
 	
 func _ready():
 	NPC()
+	#Aqui se debe de imprimir ya que esta función debe de devolvernos un dato
+	#print(Hora())
 	Hora()
 	clase("paladin")
+	
+	#Faltó la actividad 4 y 5

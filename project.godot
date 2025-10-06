@@ -17,5 +17,6 @@ config/icon="res://icon.svg"
 [file_customization]
 
 folder_colors={
-"res://890-2/Scripts/Revisados/": "green"
+"res://890-2/Scripts/Revisados/": "green",
+"res://891-2/Revisados/": "green"
 }

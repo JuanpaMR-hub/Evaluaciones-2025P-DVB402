@@ -1,5 +1,7 @@
 extends Node2D
 
+# Si no retorna nada, se le pide especificar que retorna void
+#func mensaje()->void:
 func mensaje():
 	print("¡Cuidado! Aquí está Gohl el Troll del Puente.")
 
@@ -11,6 +13,7 @@ func obtener_hora_actual() -> String:
 	var hora_actual = horas + ":" + minutos + ":" + segundos
 	return hora_actual
 
+#func mensaje_por_clase(clase_jugador : String) -> void:
 func mensaje_por_clase(clase_jugador: String):
 	if clase_jugador.to_lower() == "paladin":
 		print("Oh ya veo, con que un Paladín eh? dime, que te motivó a escoger un camino tan... aburrido?")
