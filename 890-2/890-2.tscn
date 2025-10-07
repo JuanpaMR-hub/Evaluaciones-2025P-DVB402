@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cpxgn1ijigg"]
 
-[ext_resource type="Script" uid="uid://daqkgtlkr7lqv" path="res://891-2/Revisados/Valentina Betancourt.gd" id="1_dngkm"]
+[ext_resource type="Script" uid="uid://dgk6f8o6jk7sf" path="res://892-2/Revisados/Vicente Barria.gd" id="1_dngkm"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_dngkm")

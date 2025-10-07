@@ -1,0 +1,20 @@
+func hora_actual():
+	
+	print("la horas es ")
+	
+
+	
+	
+func _ready():
+	
+	return("la horas es ")
+	
+	#var dateTimeStam_actual = Time.get_datetime_dict_from_system()
+	#var horas = str( dateTimeStamp_actual.hour)
+	#var minutos = str(dateTimeStamp_actual.minute)
+	#var segundos = str(dateTimeStamp_actual.second)
+	#var hora_actual = horas + ":" + minutos + ":" + segundos.
+	
+	#if clase_jugador.to_lower() == "paladin":
+	print("oh ya veo, con que un paladin eh? dime, que te motivo a escoger un camino tan...aburrido?")
+	#elif clase_jugador.to_lower() == "berserk":
