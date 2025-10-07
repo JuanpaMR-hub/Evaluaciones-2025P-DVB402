@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqry5klc2ajjs"]
+
+[ext_resource type="Script" uid="uid://dwxmqlpfcgdr7" path="res://891-2/Revisados/Vicente Roldan.gd" id="1_mlfut"]
+
+[node name="escena con codigo" type="Node2D"]
+script = ExtResource("1_mlfut")
+
+[node name="6d380b2e25d985d5699d80e6f96Cda1c" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(552, 352)
